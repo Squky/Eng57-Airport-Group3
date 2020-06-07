@@ -1,6 +1,7 @@
 class Flight():
 
-    def __init__(self, flight_number, origin, destination, duration, passenger_list):
+    def __init__(self,aircraft_id, flight_number, origin, destination, duration, passenger_list):
+        self.aircraft_id = aircraft_id
         self.flight_num = flight_number
         self.origin = origin
         self.destination = destination
@@ -13,6 +14,7 @@ class Flight():
 
     def get_details(self):
         attributes = {
+            "Aircraft id"   : self.aircraft_id,
             "Flight Number ": self.flight_num,
             "Origin        ": self.origin,
             "Destination   ": self.destination,
