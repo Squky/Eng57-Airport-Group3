@@ -26,3 +26,16 @@ class Flight():
             print(key, " : ", attributes[key])
 
         return attributes
+
+    def update_aircraft(self,aircraft_id):
+        user_input = input("Please enter your password: ")
+        count = 5
+        while count !=0:
+
+            if(user_input == "SecretPassword123"):
+                self.aircraft_id = aircraft_id
+                break
+            else:
+                count-=1
+                print(f"Sorry, incorrect password. You can try again {count} more times")
+
