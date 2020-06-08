@@ -8,3 +8,10 @@ class Passenger(People):
         self.passenger_type = pass_type
 
 
+    # def add_passenger(self,name,tax_num,passport,passType):
+    #     super().__init__(name, tax_num)
+    #     self.passport = passport
+    #     self.passenger_type = passType
+
+
+

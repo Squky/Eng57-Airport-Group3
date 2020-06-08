@@ -16,6 +16,9 @@ test_flight.add_passenger(test_passenger)
 
 
 test_flight.get_details()
+
+print(test_flight.get_passengers())
+
 # test_flight.get_details()
 
 # print(test_flight.add_passenger(test_passenger))
