@@ -100,9 +100,33 @@ while user_input!= "exit":
               "|-[B] Get list of Passengers    |\n"
               "|-[C] Get Passenger details     |\n")
 
+        user_input = input("Please choose your option: ")
+
+        #This section creates a new passenger and adds it to the selected flight
+
+        # CODE GOES HERE
+
+
+        #This section returns a list of passengers for a given flight
+
+        # CODE GOES HERE
+
+        #This section gets passenger details for a given passenger
+
+        # CODE GOES HERE
 
     # This section leads to the Aircraft options:
-    # elif(user_input.lower()=="c"):
+    elif(user_input.lower()=="c"):
+
+        print(" _______________________________\n"
+              "|AIRCRAFT OPTIONS               |\n"
+              " _______________________________\n"
+              "|-[A] THIS IS INCOMPLETE        |\n"
+              "|-[B] THESE OPTIONS DON'T WORK  |\n"
+              "|-[C] NEEDS TO BE UPDATED       |\n"
+              "|-[D] OR REMOVED                |\n")
+
+        user_input = input("Please choose your option: ")
 
 
 
