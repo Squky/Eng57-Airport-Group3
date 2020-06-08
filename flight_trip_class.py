@@ -16,6 +16,9 @@ class Flight():
             self.__passenger_list.append(passenger.name)
             return f"{passenger.name} added to the passenger list for flight {self.flight_num}"
 
+
+    def get_passengers(self):
+        return self.__passenger_list
     def get_details(self):
         attributes = {
             "Aircraft id   ": self.__aircraft_id,
