@@ -7,8 +7,9 @@ class TestFlight(TestCase):
     # Tests the "add_passenger" method of class Flight (flight_trip_class.py)
     # To test this method, a sample/test passenger must be created
     # and also a sample/test flight
+
     def test_add_passenger(self):
-        test_passenger = Passenger("Bob",12345,"AJ8127393")
+        test_passenger = Passenger("Bob",12345,"AJ8127393","Adult")
         test_flight = Flight("heath10550","JF1234","Portugal","United Kingdom",4,[])
 
         # The actuall assertion/test - this checks if the value returned from calling the method equals the expected
@@ -27,8 +28,7 @@ class TestFlight(TestCase):
             "Duraton       ": 4,
             "Passengers    ": []
         }
-        self.assertTrue( test_flight.get_details() == test_output )
-
+        self.assertTrue(test_flight.get_details() == test_output)
 
 
 

@@ -15,12 +15,15 @@ test_flight.get_details()
 print(test_flight.add_passenger(test_passenger))
 test_flight.aircraft_id
 
-
+output = test_flight.get_details()
 test_output = {
     "Aircraft id   ": "heath10550",
     "Flight Number ": "JF1234",
     "Origin        ": "Portugal",
     "Destination   ": "United Kingdom",
     "Duraton       ": 4,
-    "Passengers    ": []
+    "Passengers    ": ['Bob']
 }
+print(output==test_output)
+
+test_flight.update_aircraft("Spitfire")

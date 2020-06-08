@@ -14,7 +14,7 @@ class Flight():
 
     def get_details(self):
         attributes = {
-            "Aircraft id"   : self.aircraft_id,
+            "Aircraft id   ": self.aircraft_id,
             "Flight Number ": self.flight_num,
             "Origin        ": self.origin,
             "Destination   ": self.destination,
@@ -37,6 +37,7 @@ class Flight():
 
             if(user_input == "SecretPassword123"):
                 self.aircraft_id = aircraft_id
+                print(f"{aircraft_id} added as the new aircraft for this flight!")
                 break
             else:
                 count-=1
