@@ -9,8 +9,13 @@ class Flight():
         self.__passenger_list = passenger_list
 
     def add_passenger(self, passenger):
-        self.__passenger_list.append(passenger.name)
-        return f"{passenger.name} added to the passenger list for flight {self.flight_num}"
+
+        if(len(self.__passenger_list)==300):
+            return "Sorry this flight is full!"
+        else:
+
+            self.__passenger_list.append(passenger.name)
+            return f"{passenger.name} added to the passenger list for flight {self.flight_num}"
 
     def get_details(self):
         attributes = {
