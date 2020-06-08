@@ -7,8 +7,14 @@ from flight_trip_class import *
 from passenger_subClass import *
 
 test_flight = Flight("heath10550","JF1234", "Portugal", "United Kingdom", 4, [])
+test_passenger = Passenger("Bob",12345,"AJ8127393","Adult")
+
 
 test_flight.get_details()
+
+print(test_flight.add_passenger(test_passenger))
+test_flight.aircraft_id
+
 
 test_output = {
     "Aircraft id   ": "heath10550",

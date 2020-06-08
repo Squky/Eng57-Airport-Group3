@@ -27,6 +27,9 @@ class Flight():
 
         return attributes
 
+    def get_passengers(self):
+        return self.passenger_list
+
     def update_aircraft(self,aircraft_id):
         user_input = input("Please enter your password: ")
         count = 5
