@@ -6,10 +6,10 @@ class Flight():
         self.origin = origin
         self.destination = destination
         self.duration = duration
-        self.passenger_list = passenger_list
+        self.__passenger_list = passenger_list
 
     def add_passenger(self, passenger):
-        self.passenger_list.append(passenger.name)
+        self.__passenger_list.append(passenger.name)
         return f"{passenger.name} added to the passenger list for flight {self.flight_num}"
 
     def get_details(self):
@@ -19,7 +19,7 @@ class Flight():
             "Origin        ": self.origin,
             "Destination   ": self.destination,
             "Duraton       ": self.duration,
-            "Passengers    ": self.passenger_list
+            "Passengers    ": self.__passenger_list
         }
 
         for key in attributes:
@@ -27,8 +27,11 @@ class Flight():
 
         return attributes
 
+
     def get_passengers(self):
-        return self.passenger_list
+        return self.__passenger_list
+
+
 
     def update_aircraft(self,aircraft_id):
         user_input = input("Please enter your password: ")
