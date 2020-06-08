@@ -119,7 +119,7 @@ while user_input!= "exit":
 
 
 
-    # This section leads to the Aircraft options:
+    # This section leads to the Aircraft options (NOT SURE IF THIS IS NEEDED YET- INCOMPLETE):
     elif(user_input.lower()=="c"):
 
         print(" _______________________________\n"
