@@ -10,7 +10,7 @@ class Flight():
 
     def add_passenger(self, passenger):
 
-        if(len(self.__passenger_list)==300):
+        if(len(self.__passenger_list)==30):
             return "Sorry this flight is full!"
         else:
             self.__passenger_list.append(passenger.name)
@@ -30,6 +30,14 @@ class Flight():
 
         return attributes
 
+    def create_flight(self,aircraft_id, flight_number, origin, destination, duration, passenger_list):
+        self.__aircraft_id = aircraft_id
+        self.flight_num = flight_number
+        self.origin = origin
+        self.destination = destination
+        self.duration = duration
+        self.__passenger_list = passenger_list
+        return self
 
     def get_passengers(self):
         return self.__passenger_list

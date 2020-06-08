@@ -12,9 +12,10 @@ class TestFlight(TestCase):
         test_passenger = Passenger("Bob",12345,"AJ8127393","Adult")
         test_flight = Flight("heath10550","JF1234","Portugal","United Kingdom",4,[])
 
-        # The actuall assertion/test - this checks if the value returned from calling the method equals the expected
+        # The actual assertion/test - this checks if the value returned from calling the method equals the expected
         # result
-        self.assertTrue(test_flight.add_passenger(test_passenger)=="Bob added to the passenger list for flight JF1234")
+
+        self.assertTrue( test_flight.add_passenger(test_passenger) =="Bob added to the passenger list for flight JF1234")
 
 
 
@@ -28,7 +29,7 @@ class TestFlight(TestCase):
             "Duraton       ": 4,
             "Passengers    ": []
         }
-        self.assertTrue(test_flight.get_details() == test_output)
+        self.assertTrue(    test_flight.get_details() == test_output )
 
 
 
